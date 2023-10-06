@@ -27,10 +27,10 @@ def hbnb():
     st_ct = []
 
     for state in states:
-        st_ct.append([state, sorted(state.cities, key=key=attrgetter('name')])
+        st_ct.append([state, sorted(state.cities, key=attrgetter('name'))])
 
     amenities = storage.all(Amenity).values()
-    amenities = sorted(amenities, key=key=attrgetter('name'))
+    amenities = sorted(amenities, key=attrgetter('name'))
 
     return render_template('100-hbnb.html',
                            states=st_ct,
