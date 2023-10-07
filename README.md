@@ -1,6 +1,30 @@
 # AirBnB Clone - The Console
 The console is the first segment of the AirBnB project at Holberton School that will collectively cover fundamental concepts of higher level programming. The goal of AirBnB project is to eventually deploy our server a simple copy of the AirBnB Website(HBnB). A command interpreter is created in this segment to manage objects for the AirBnB(HBnB) website.
 
+# `0x06. AirBnB clone - Web dynamic`
+
+This project was done during **ALX SE Studies** at **ALX School**. The end game is to learn:
+* How cool it is to request your own API
+* How to modify an HTML element style
+* How to get and update an HTML element content
+* How to modify the DOM
+* How to make a GET request with JQuery Ajax
+* How to make a POST request with JQuery Ajax
+* How to listen/bind to DOM events
+* How to listen/bind to user events
+
+## `Tech`
+### `General`
+* Used editors: `vi`, `vim`, and `emacs`
+* All files are interpreted on Chrome (version 57.0)
+* All files end with a new line
+* A `README.md` file at the root of the folder of the project
+* Codes are `semistandard` compliant with the flag `--global $`: `semistandard *.js --global $`
+* All JavaScript is in the folder `scripts`
+* Used JQuery version 3.x
+* `var` was not used
+* No HTML reload for each action: DOM manipulation, update values, fetch data…
+
 #### Functionalities of this command interpreter:
 * Create a new object (ex: a new User or a new Place)
 * Retrieve an object from a file, a database etc...
@@ -158,6 +182,8 @@ Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twit
 Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)  
 Jhoan Zamora - [Github](https://github.com/jzamora5) / [Twitter](https://twitter.com/JhoanZamora10)  
 David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twitter.com/disartDave)
+### David Tikoli: <tikolidavid@yahoo.com> [GitHub](https://github.com/Dtikoli) - 
+### Gideon Selorm Attakpah: <attakpahgideon@gmail.com> [GitHub](https://github.com/iamgideonchrist) - [Twitter](https://twitter.com/iamgideonchrist) - [Linkedin](https://www.linkedin.com/in/iamgideonchrist/)
 
 Second part of Airbnb: Joann Vuong
 ## License
