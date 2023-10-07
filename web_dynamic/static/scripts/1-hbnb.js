@@ -1,6 +1,6 @@
 $(document).ready(function () {
   const selectedAmenities = {};
-  $('li input[type="checkbox"]').change(function () {
+  $('li input[type="checkbox"]').on('change', function () {
     if (this.checked) {
       selectedAmenities[this.dataset.name] = this.dataset.id;
     } else {
