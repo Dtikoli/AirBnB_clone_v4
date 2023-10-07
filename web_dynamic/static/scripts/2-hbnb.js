@@ -1,14 +1,14 @@
 $(document).ready(function () {
   const HOST = 'http://0.0.0.0:5001';
-  const amenities = {};
+  const selectedAmenities = {};
 
-  $('li input[type="checkbox"]').change(function () {
+  $('li input[type="checkbox"]').on('change', function () {
     if (this.checked) {
-      amenities[this.dataset.name] = this.dataset.id;
+      selectedAmenities[this.dataset.name] = this.dataset.id;
     } else {
-      delete amenities[this.dataset.name];
+      delete selectedAmenities[this.dataset.name];
     }
-    $('.amenities h4').text(Object.keys(amenities).sort().join(', '));
+    $('.amenities h4').text(Object.keys(selectedAmenities).sort().join(', '));
   });
 
   // Get status of API

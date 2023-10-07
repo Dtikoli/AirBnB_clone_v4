@@ -48,9 +48,7 @@ $(document).ready(function () {
   $.post({
     url: `${HOST}/api/v1/places_search`,
     data: JSON.stringify({}),
-    headers: {
-      'Content-Type': 'application/json',
-    },
+    headers: { 'Content-Type': 'application/json' },
     dataType: 'json',
     success: function (placesData) {
       $(placesData).each(function (index, place) {
@@ -76,25 +74,23 @@ $(document).ready(function () {
         );
         fetchReviews(place.id);
       });
-    },
+    }
   });
 
   // Search places
   $('.filters button').on('click', searchPlaces);
   searchPlaces();
 
-  // Fetch places and reviews
-  function searchPlaces() {
+  // Filter places by Amenity, States and Cities
+  function searchPlaces () {
     $.post({
       url: `${HOST}/api/v1/places_search`,
       data: JSON.stringify({
         amenities: Object.values(selectedAmenities),
         states: Object.values(selectedStates),
-        cities: Object.values(selectedCities),
+        cities: Object.values(selectedCities)
       }),
-      headers: {
-        'Content-Type': 'application/json',
-      },
+      headers: { 'Content-Type': 'application/json' },
       dataType: 'json',
       success: function (data) {
         $('section.places').empty();
@@ -121,11 +117,12 @@ $(document).ready(function () {
           );
           fetchReviews(place.id);
         });
-      },
+      }
     });
   }
 
-  function fetchReviews(placeId) {
+  // Show or Hide Reviews
+  function fetchReviews (placeId) {
     $.getJSON(
       `${HOST}/api/v1/places/${placeId}/reviews`,
       function (data) {
