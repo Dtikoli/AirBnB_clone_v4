@@ -25,7 +25,7 @@ $(document).ready(function () {
     url: `${HOST}/api/v1/places_search`,
     data: JSON.stringify({}),
     headers: {
-      'Content-Type': 'application/json',
+      'Content-Type': 'application/json'
     },
     dataType: 'json',
     success: function (data) {
@@ -47,6 +47,6 @@ $(document).ready(function () {
           </article>`
         );
       });
-    },
+    }
   });
 });
