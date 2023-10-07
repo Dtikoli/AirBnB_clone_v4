@@ -26,8 +26,8 @@ $(document).ready(function () {
     data: JSON.stringify({}),
     headers: { 'Content-Type': 'application/json' },
     dataType: 'json',
-    success: function (placesData) {
-      $(placesData).each(function (index, place) {
+    success: function (data) {
+      $(data).each(function (index, place) {
         $('section.places').append(
           `<article>
             <div class="title_box">

@@ -24,9 +24,7 @@ $(document).ready(function () {
   $.post({
     url: `${HOST}/api/v1/places_search`,
     data: JSON.stringify({}),
-    headers: {
-      'Content-Type': 'application/json'
-    },
+    headers: { 'Content-Type': 'application/json' },
     dataType: 'json',
     success: function (data) {
       $(data).each(function (index, place) {
